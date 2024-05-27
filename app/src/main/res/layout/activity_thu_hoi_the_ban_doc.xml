@@ -163,6 +163,7 @@
             android:textColorHint="@color/text"
             android:textSize="@dimen/body2" />
     </com.google.android.material.textfield.TextInputLayout>
+
     <Button
         android:id="@+id/btnthuhoithe"
         android:layout_width="155dp"

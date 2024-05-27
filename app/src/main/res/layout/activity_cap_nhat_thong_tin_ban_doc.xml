@@ -223,7 +223,7 @@
             android:textAlignment="center"
             android:textColorHint="#FFFFFF"
             android:textSize="@dimen/body1"
-            android:layout_marginLeft="@dimen/heading1"
+            android:layout_marginLeft="28dp"
             app:backgroundTint="@null" />
 
 

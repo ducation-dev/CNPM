@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 import com.google.android.material.textfield.TextInputEditText;
@@ -12,6 +13,7 @@ import com.google.android.material.textfield.TextInputEditText;
 public class ThuHoiTheBanDocActivity extends AppCompatActivity{
     // Khai bao id
     ImageButton btnback; // khai bao imagebutton back
+    Button btnthuhoithe;
     TextInputEditText edthotenth, edtlopth, edtsdtth, edtnguoidangkyth, edtngaythuhoith, edtlydoth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +21,9 @@ public class ThuHoiTheBanDocActivity extends AppCompatActivity{
         setContentView(R.layout.activity_thu_hoi_the_ban_doc);
         //anh xa id image btnback
         btnback = findViewById(R.id.btnback);
+        //anh xa id btn nhap thu hoi
+        btnthuhoithe = findViewById(R.id.btnthuhoithe);
+        //anh xa id thu hoi the
         edthotenth = findViewById(R.id.edthotenth);
         edtlopth = findViewById(R.id.edtlopth);
         edtsdtth = findViewById(R.id.edtsdtth);
@@ -31,6 +36,13 @@ public class ThuHoiTheBanDocActivity extends AppCompatActivity{
             @Override
             public void onClick(View v) {
                 Intent intentTrangChu = getIntent();
+                finish();
+            }
+        });
+        btnthuhoithe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentThuHoi = new Intent();
                 finish();
             }
         });

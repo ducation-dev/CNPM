@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 import com.google.android.material.textfield.TextInputEditText;
@@ -12,6 +13,7 @@ import com.google.android.material.textfield.TextInputEditText;
 public class CapTheBanDocActivity extends AppCompatActivity {
     // Khai bao id
     ImageButton btnback; // khai bao imagebutton back
+    Button btncapthe;
     TextInputEditText edthotenct, edtlopct, edtsdtct, edtanhct, edtngaydangkyct, edtnguoidangkyct, edttrangthaict;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +21,8 @@ public class CapTheBanDocActivity extends AppCompatActivity {
         setContentView(R.layout.activity_capthebandoc);
         //anh xa id image btnback
         btnback = findViewById(R.id.btnback);
+        //anh xa id btn nhap cap the
+        btncapthe = findViewById(R.id.btncapthe);
         //anh xa id capthe
         edthotenct = findViewById(R.id.edthotenct);
         edtlopct = findViewById(R.id.edtlopct);
@@ -32,6 +36,13 @@ public class CapTheBanDocActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intentTrangChu = getIntent();
+                finish();
+            }
+        });
+        btncapthe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentCapThe = getIntent();
                 finish();
             }
         });
