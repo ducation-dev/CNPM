@@ -48,15 +48,15 @@
         app:hintEnabled="false">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edtmsvcn"
+            android:id="@+id/edtmabandoccn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@drawable/background_input"
             android:ems="10"
-            android:hint="Mã sinh viên"
-            android:inputType="text"
-            android:maxLength="50"
+            android:hint="Mã bạn đọc"
+            android:inputType="number"
+            android:maxLength="10"
             android:textColorHint="@color/text"
             android:textSize="@dimen/body2" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -89,15 +89,15 @@
         app:hintEnabled="false">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edtsdtcn"
+            android:id="@+id/edtlopcn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@drawable/background_input"
             android:ems="10"
-            android:hint="Số điện thoại"
-            android:inputType="number"
-            android:maxLength="10"
+            android:hint="Lớp hành chính"
+            android:inputType="text"
+            android:maxLength="12"
             android:textColorHint="@color/text"
             android:textSize="@dimen/body2" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -115,16 +115,16 @@
             app:hintEnabled="false">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/edtdiachicn"
+                android:id="@+id/edtsdtcn"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/background_input"
                 android:ems="10"
-                android:hint="Địa chỉ"
+                android:hint="Số điện thoại"
 
-                android:inputType="text"
-                android:maxLength="50"
+                android:inputType="number"
+                android:maxLength="11"
                 android:textColorHint="@color/text"
                 android:textSize="16dp" />
 
@@ -141,15 +141,15 @@
         app:hintEnabled="false">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edtanhcn"
+            android:id="@+id/edtdiachicn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@drawable/background_input"
             android:ems="10"
-            android:hint="Ảnh"
-            android:inputType="textMultiLine"
-            android:maxLength="10"
+            android:hint="Địa chỉ"
+            android:inputType="text"
+            android:maxLength="50"
             android:textColorHint="@color/text"
             android:textSize="@dimen/body2" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -161,13 +161,13 @@
         app:hintEnabled="false">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edtlopcn"
+            android:id="@+id/edtmsvcn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@drawable/background_input"
             android:ems="10"
-            android:hint="Lớp hành chính"
+            android:hint="Mã sinh viên"
             android:inputType="number"
             android:maxLength="15"
             android:textColorHint="@color/text"

@@ -40,6 +40,25 @@
     </LinearLayout>
 
     </LinearLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:hintEnabled="false">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtidmathect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_input"
+            android:ems="10"
+            android:hint="Mã thẻ"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textColorHint="@color/text"
+            android:textSize="@dimen/body2" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -102,56 +121,25 @@
                 android:textSize="@dimen/body2" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/body1"
-                android:layout_weight="1"
-                app:hintEnabled="false">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/edtanhct"
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/background_input"
-                    android:ems="10"
-                    android:hint="Ảnh"
-                    android:inputType="textMultiLine"
-                    android:maxLength="1"
-                    android:textColorHint="@color/text"
-                    android:textSize="@dimen/body2" />
 
 
-            </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
-
-        </LinearLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
+        <TextView
+            android:id="@+id/edtngaydangkyct"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/body1"
-            app:hintEnabled="false">
+            android:background="@drawable/background_input"
+            android:drawableEnd="@drawable/date_time"
+            android:text="Ngày đăng ký"
+            android:textSize="@dimen/body2" />
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/edtngaydangkyct"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/background_input"
-                android:ems="10"
-                android:hint="Ngày đăng ký"
-                android:inputType="datetime"
-                android:maxLength="10"
-                android:textColorHint="@color/text"
-                android:textSize="@dimen/body2" />
-        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"

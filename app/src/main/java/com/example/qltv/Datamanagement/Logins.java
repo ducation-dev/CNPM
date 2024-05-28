@@ -9,48 +9,54 @@ import java.sql.Statement;
 import java.util.ArrayList;
 
 public class Logins {
-    private String ID;
-    private String Passwords;
+    private String user;
+    private String pass;
 
-    public Logins(){
-        ID = "";
-        Passwords = "";
-    };
-
-    public Logins(String ID, String passwords) {
-        this.ID = ID;
-        Passwords = passwords;
+    public Logins() {
+        user = "";
+        pass = "";
     }
 
-    public static ArrayList<Logins> getIDlist() throws SQLException {
+    ;
+
+    public Logins(String user, String pass) {
+        this.user = user;
+        this.pass = pass; 
+    }
+
+
+    public static Logins getuserlist(String user, String pass) throws SQLException {
         Connection connection = SQLmanagement.connectionSQLSever();
-        ArrayList<Logins> list = new ArrayList<>();
+        Logins login = new Logins();
         Statement statement = connection.createStatement();// Tạo đối tượng Statement.
-        String sql = "select * from Logins"; //where ID = '"+ID + " ' and Passwords = '"+passwords + "' ";
+        String sql = "SELECT * FROM LOGINS WHERE ID = '" + user + "' AND PASSUSERS = '" + pass + "'";
         // Thực thi câu lệnh SQL trả về đối tượng ResultSet. // Mọi kết quả trả về sẽ được lưu trong ResultSet
         ResultSet rs = statement.executeQuery(sql);
         while (rs.next()) {
-            list.add(new Logins(
+            login = new Logins(
                     rs.getString("ID").trim(),
-                    rs.getString("Passwords").trim()));// Đọc dữ liệu từ ResultSet
+                    rs.getString("PASSUSERS"));// Đọc dữ liệu từ ResultSet
+
         }
+        statement.close();
         connection.close();// Đóng kết nối
-        return list;
+        return login;
     }
 
-    public String getID() {
-        return ID;
+    public String getUser() {
+        return user;
     }
 
-    public void setID(String ID) {
-        this.ID = ID;
+    public void setUser(String user) {
+        this.user = user;
     }
 
-    public String getPasswords() {
-        return Passwords;
+    public String getPass() {
+        return pass;
     }
 
-    public void setPasswords(String passwords) {
-        Passwords = passwords;
+    public void setPass(String pass) {
+        this.pass = pass;
     }
 }
+

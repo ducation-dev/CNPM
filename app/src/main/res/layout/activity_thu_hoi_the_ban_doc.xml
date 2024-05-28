@@ -44,6 +44,26 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:hintEnabled="false">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtidmatheth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_input"
+            android:ems="10"
+            android:hint="Mã thẻ"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textColorHint="@color/text"
+            android:textSize="@dimen/body2" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/body5"
         app:hintEnabled="false">
 
@@ -103,7 +123,6 @@
     </com.google.android.material.textfield.TextInputLayout>
 
 
-
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -124,25 +143,7 @@
             android:textSize="@dimen/body2" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/body1"
-        app:hintEnabled="false">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edtngaythuhoith"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/background_input"
-            android:ems="10"
-            android:hint="Ngày thu hồi"
-            android:inputType="datetime"
-            android:maxLength="10"
-            android:textColorHint="@color/text"
-            android:textSize="@dimen/body2" />
-    </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -151,13 +152,13 @@
         app:hintEnabled="false">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edtlydoth"
+            android:id="@+id/edttrangthaith"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@drawable/background_input"
             android:ems="10"
-            android:hint="Lý do"
+            android:hint="Trạng thái"
             android:inputType="text"
             android:maxLength="15"
             android:textColorHint="@color/text"
